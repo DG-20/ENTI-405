@@ -1,0 +1,72 @@
+.mainContainer {
+    max-width: 90%;
+    scroll-margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profileImg {
+    max-height: 100%;
+    max-width: 100%;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.text-start {
+    font-size: 3vh;
+}
+
+.mainTitle {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.mainTextOrig {
+    opacity: 0;
+}
+
+.mainTextAnim {
+    animation: fadeInFromRightImg 0.75s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+.mainImgOrig {
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.mainImgAnim {
+    animation: fadeInFromLeftImg 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeInFromRightImg {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeftImg {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

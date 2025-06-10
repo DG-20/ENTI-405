@@ -15,7 +15,7 @@ function Landing() {
                         <p className="text-center mainText">
                             17th Ave Recommendations by Group 7
                         </p>
-                        <a href="#mission">
+                        <a href="#aboutMe">
                             <div className="scrollAnim">
                                 <div className="mouse">
                                     <div className="movingPiece"></div>
