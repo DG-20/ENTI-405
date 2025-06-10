@@ -1,0 +1,170 @@
+.landingParent {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landingParent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+.landing {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.335);
+}
+
+.mainText {
+    background-color: rgba(0, 0, 0, 0.341);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.subTitle {
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    animation-name: FadeIn;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: white;
+}
+
+/* Phones */
+@media screen and (max-width: 450px) and (max-height: 700px) {
+    .scrollAnim {
+        padding-top: 120px;
+    }
+
+    .landingLogo {
+        max-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 900px) and (min-height: 701px) {
+    .scrollAnim {
+        padding-top: 230px;
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 1000px) and (min-height: 901px) {
+    .scrollAnim {
+        padding-top: 260px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .scrollAnim {
+        padding-top: 260px;
+    }
+
+    .subTitle {
+        font-size: 3vh;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 850px) and (min-width: 800px) and (max-height: 1200px) and (min-height: 1150px) {
+    .scrollAnim {
+        padding-top: 320px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 750px) and (max-height: 1100px) and (min-height: 1024px) {
+    .scrollAnim {
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 900px) and (max-height: 1400px) and (min-height: 1350px) {
+    .scrollAnim {
+        padding-top: 290px;
+    }
+
+    .subTitle {
+        font-size: 4.5vh;
+    }
+}
+
+@media screen and (max-width: 550px) and (min-width: 540px) and (max-height: 750px) and (min-height: 720px) {
+    .scrollAnim {
+        padding-top: 90px;
+    }
+
+    .subTitle {
+        font-size: 3.5vh;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.scrollAnim {
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+.mouse {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.movingPiece {
+    width: 3px;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px black;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+}
