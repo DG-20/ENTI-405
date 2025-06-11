@@ -25,12 +25,10 @@ function Main() {
                             className={`${"mainTextOrig"} ${aboutVisible ? "mainTextAnim" : "mainTextOrig"
                                 }`}
                         >
-                            <p className="text-start">We are Group 7</p>
+                            <p className="text-start"><b>Welcome from Group 7!</b></p>
                             <p className="text-start">
-                                This website contains six of our key, focused recommendations for improvements to 17th Ave in Calgary.
-                                After conducting a lot of primary and secondary research, we have backed up our recommendations with key
-                                facts and figures. To view our recommendations, simply scroll down and click on each rectangle which will
-                                open a more detailed view of each recommendation.
+                                This website presents six targeted, evidence-based recommendations for improving 17th Avenue in Calgary. Developed through extensive primary and secondary research, each recommendation is supported by key data, community insights, and practical analysis.
+                                To explore our proposals, simply scroll down and click on any of the featured tiles to view a detailed breakdown, including benefits, supporting evidence, and implementation considerations.
                             </p>
                         </Col>
                         <Col
