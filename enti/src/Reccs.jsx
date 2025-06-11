@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import recc1_1 from "./images/Recc1_1.png"
 import recc1_2 from "./images/Recc1_2.png"
 import recc1_3 from "./images/Recc1_3.png"
+import recc2_1 from "./images/Recc2_1.png"
 
 function Reccs() {
     const [recc1, setRecc1] = useState(false);
@@ -50,7 +51,7 @@ function Reccs() {
                         <Button onClick={() => setRecc1(true)}>Reccomendation 1: Parking</Button>
                         <Modal show={recc1} onHide={() => setRecc1(false)} size="lg" centered>
                             <Modal.Header closeButton>
-                                <Modal.Title>Parking Validation Program</Modal.Title>
+                                <Modal.Title as={"h2"}><b>Parking Validation Program</b></Modal.Title>
                             </Modal.Header>
 
                             <Modal.Body>
@@ -64,8 +65,8 @@ function Reccs() {
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
                                     <p>
-                                        To reduce a key barrier to visiting 17th Avenue, we recommend implementing a parking validation program that offers customers free or discounted parking when they make purchases at participating businesses on the street. This could be managed through physical tickets or digital codes and could be paired with long-term plans for improved parking infrastructure, such as an underground parkade.
-                                        This initiative not only reduces visitor cost but encourages longer, more frequent visits while boosting collaboration between local shops. This benefits both business and consumers alike. By Reducing a barrier to entry, businesses will likely see a higher number of customer vists on average. In addition, by offering parking discount or free parking, consumers will have a better experience when visiting 17th Ave - a key issue currently faced by many visitors as described below.
+                                        To reduce a key barrier to visiting 17th Avenue, we recommend implementing a parking validation program that offers customers free or discounted parking when they make purchases at participating businesses on the street. This would likely be managed through digital codes or a mobile application and could be paired with long-term plans for improved parking infrastructure, such as an underground parkade.
+                                        This initiative not only reduces visitor cost but encourages longer, more frequent visits while boosting collaboration between local shops. This benefits both business and consumers alike. By reducing a barrier to entry, businesses will likely see a higher number of customer vists on average. In addition, by offering parking discount or free parking, consumers will have a better experience when visiting 17th Ave - a key issue currently faced by many visitors as described below.
                                     </p>
                                 </section>
                                 <hr />
@@ -106,8 +107,28 @@ function Reccs() {
                                             <li>🚫 <strong>84%</strong> rated current parking as Moderate or worse (fig. 3).</li>
                                             <li>✅ <strong>Only 16%</strong> rated it Very Good or Excellent (fig. 3).</li>
                                         </ul>
-                                        These stats confirm that parking is not just a nuisance — it's a major friction point affecting foot traffic and business success.
                                     </p>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Data</h4>
+                                    <p className="text-gray-700">
+                                        Observation supporting the reccomendation:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>When we visited 17th Avenue, we noticed that there was little to no street parking available,
+                                                and a lot of cars were lined up at lights and stop signs.</li>
+                                        </ul>
+                                    </p>
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    These statistics reveal a clear pain point for visitors: nearly <strong>50%</strong> of people arrive
+                                    on 17th Avenue by car, and yet over <strong>57%</strong> rated the current parking situation as weak or poor.
+                                    At the same time, close to <strong>70%</strong> of respondents indicated that parking was moderately to extremely
+                                    important to their visit experience. With fewer than <strong>16%</strong> feeling that parking is currently
+                                    very good or excellent, it's evident that parking is both a high-priority concern and an underperforming feature of the street.
+                                    This is reinforced by our qualitative observations during field visits, where we saw little to no street parking available
+                                    and cars frequently backed up at lights and stop signs — highlighting real-time congestion and demand.
+                                    As such, implementing a parking validation program along with a longer-term plan for increasing the number of parking available directly
+                                    addresses these issues by reducing cost-related friction and improving accessibility for a significant portion of visitors.
+                                    By removing one of the main barriers to access, this recommendation will benefit both business and consumers alike. Businesses will
+                                    see more customer visits due to an improved parking infrastructure, and consumers will have a much better parking experience.
                                 </section>
                             </Modal.Body>
 
@@ -122,22 +143,78 @@ function Reccs() {
 
                     <Row>
                         <Button onClick={() => setRecc2(true)}>Reccomendation 2: Culture Pass</Button>
-                        <Modal size="lg" show={recc2} onHide={() => setRecc2(false)}>
+                        <Modal show={recc2} onHide={() => setRecc2(false)} size="lg" centered>
                             <Modal.Header closeButton>
-                                <Modal.Title id="example-modal-sizes-title-lg">
-                                    17th Ave Culture Pass
-                                </Modal.Title>
+                                <Modal.Title as={"h2"}><b>17th Avenue Cultural Pass</b></Modal.Title>
                             </Modal.Header>
+
                             <Modal.Body>
                                 <img
-                                    src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
-                                    alt="17th Ave"
-                                    className="img-fluid mb-3 rounded"
+                                    src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
+                                    alt="Cultural Pass Promotion"
+                                    className="img-fluid text-center rounded mb-4"
+                                    style={{ margin: "auto" }}
                                 />
-                                <p>
-                                    The 17th Ave Cultural Pass is a digital pass that offers discounts and perks at local restaurants, cafés, boutiques, and more. Its purpose is to increase visits and help create a more vibrant, connected atmosphere along 17th Avenue. The pass would be valid during off-peak hours - such as between 3 PM and 6 PM on weekdays, or on select holidays - encouraging both spontaneous and planned visits. This initiative directly addresses survey data, with the majority of the respondents saying that 35.7% of visitors only came to 17th Avenue once or twice in the past month. By rewarding repeat visits, the Culture Pass aims to shift that pattern and drive more consistent engagement. This will be a good opportunity to increase visits to the iconic street. The program benefits existing business owners through increased foot traffic and coordinated marketing. At the same time, it offers consumers added value through exclusive discounts and experiences - giving them more reasons to explore and return to 17th Avenue.
-                                </p>
+
+                                <section className="mb-4">
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        The 17th Avenue Cultural Pass is a digital pass that offers discounts and perks at local restaurants, cafés, boutiques, and more. Its purpose is to increase visits and help create a more vibrant, connected atmosphere along 17th Avenue.
+                                        This pass will be valid during off-peak hours - such as between 3 PM and 6 PM on weekdays (happy hour already offered by many businesses) or on select holidays (17th Avenue Retail & Entertainment District, n.d.).
+                                        By rewarding repeat visits with exclusive benefits, the Cultural Pass is designed to make 17th Avenue a more dynamic and regularly visited destination for locals and tourists alike.
+                                    </p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
+                                    <div className="mt-4">
+                                        <img
+                                            src={recc2_1}
+                                            alt="Visit Frequency Chart"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 1: Frequency of Visits to 17th Avenue in the last month</p>
+                                    </div>
+                                    <p className="text-gray-700 mt-3">
+                                        Survey responses highlight the need for this program:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>📉 <strong>35.7%</strong> of respondents said they visited 17th Avenue only once or twice in the past month (fig. 1).</li>
+                                            <li>📈 <strong>23.5%</strong> of respondents have actually visited more than 10 times in the past month (fig. 2).</li>
+                                        </ul>
+                                    </p>
+
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
+                                    <p className="text-gray-700">
+                                        Within our interview with Judy House, owner of Pimlico Bar, she mentioned something that really stood out to us. When asking about
+                                        the personality of the street, she said "when it's busy, the atmosphere is electric, but when it's quiet, it's very sad".
+                                    </p>
+
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    <p>
+                                        The Cultural Pass directly addresses a key engagement issue on 17th Avenue, which is infrequent visits.
+                                        With more than a third of respondents visiting only once or twice a month, there's significant room to grow
+                                        repeat traffic. The Culture Pass we are suggesting provides a low-risk, high-reward strategy to
+                                        capitalize on this opportunity by incentivizing visits during typically slower periods. The benefit to businesses
+                                        is clear, they get access to increased foot traffic as well as another platform to advertise and offer promotions.
+                                        As Judy described, this Culture Pass aims to reduce the amount of "quiet" times. Another benefit of this program
+                                        is for the 23.5% of the customers who mentioned they visited the street more than 10 times in the past month.
+                                        This program will reward their loyalty and repeat business.
+                                    </p>
+                                    <p>
+                                        By increasing mid-week and off-peak activity, the Culture Pass can help prevent overcrowding during peak hours and a
+                                        consistent boost of revenue to businesses.
+                                        Furthermore, the use of a shared pass will build a more collaborative ecosystem, helping the 17th Avenue BIA.
+                                    </p>
+                                </section>
                             </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc2(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
                         </Modal>
                     </Row>
                     <br />
