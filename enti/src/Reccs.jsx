@@ -48,7 +48,7 @@ function Reccs() {
                     className="align-items-center text-center buttons"
                 >
                     <Row>
-                        <Button onClick={() => setRecc1(true)}>Reccomendation 1: Parking</Button>
+                        <Button id="button-30" onClick={() => setRecc1(true)}>Reccomendation 1: Parking</Button>
                         <Modal show={recc1} onHide={() => setRecc1(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Parking Validation Program</b></Modal.Title>
@@ -142,7 +142,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button onClick={() => setRecc2(true)}>Reccomendation 2: Culture Pass</Button>
+                        <Button id="button-30" onClick={() => setRecc2(true)}>Reccomendation 2: Culture Pass</Button>
                         <Modal show={recc2} onHide={() => setRecc2(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>17th Avenue Culture Pass</b></Modal.Title>
@@ -220,7 +220,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button onClick={() => setRecc3(true)}>Reccomendation 3: Night Market</Button>
+                        <Button id="button-30" onClick={() => setRecc3(true)}>Reccomendation 3: Night Market</Button>
                         <Modal
                             size="lg"
                             show={recc3}
@@ -238,7 +238,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button onClick={() => setRecc4(true)}>Reccomendation 4: Pop-Up Test Locations</Button>
+                        <Button id="button-30" onClick={() => setRecc4(true)}>Reccomendation 4: Pop-Up Test Locations</Button>
                         <Modal
                             size="lg"
                             show={recc4}
@@ -256,7 +256,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button onClick={() => setRecc5(true)}>Reccomendation 5: Book Store</Button>
+                        <Button id="button-30" onClick={() => setRecc5(true)}>Reccomendation 5: Book Store</Button>
                         <Modal
                             size="lg"
                             show={recc5}
@@ -274,7 +274,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button onClick={() => setRecc6(true)}>Reccomendation 6: Shade & Seating</Button>
+                        <Button id="button-30" onClick={() => setRecc6(true)}>Reccomendation 6: Shade & Seating</Button>
                         <Modal
                             size="lg"
                             show={recc6}
