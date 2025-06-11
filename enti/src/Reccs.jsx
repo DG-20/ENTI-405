@@ -145,13 +145,13 @@ function Reccs() {
                         <Button onClick={() => setRecc2(true)}>Reccomendation 2: Culture Pass</Button>
                         <Modal show={recc2} onHide={() => setRecc2(false)} size="lg" centered>
                             <Modal.Header closeButton>
-                                <Modal.Title as={"h2"}><b>17th Avenue Cultural Pass</b></Modal.Title>
+                                <Modal.Title as={"h2"}><b>17th Avenue Culture Pass</b></Modal.Title>
                             </Modal.Header>
 
                             <Modal.Body>
                                 <img
                                     src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
-                                    alt="Cultural Pass Promotion"
+                                    alt="Culture Pass Promotion"
                                     className="img-fluid text-center rounded mb-4"
                                     style={{ margin: "auto" }}
                                 />
@@ -159,9 +159,9 @@ function Reccs() {
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
                                     <p>
-                                        The 17th Avenue Cultural Pass is a digital pass that offers discounts and perks at local restaurants, cafés, boutiques, and more. Its purpose is to increase visits and help create a more vibrant, connected atmosphere along 17th Avenue.
+                                        The 17th Avenue Culture Pass is a digital pass that offers discounts and perks at local restaurants, cafés, boutiques, and more. Its purpose is to increase visits and help create a more vibrant, connected atmosphere along 17th Avenue.
                                         This pass will be valid during off-peak hours - such as between 3 PM and 6 PM on weekdays (happy hour already offered by many businesses) or on select holidays (17th Avenue Retail & Entertainment District, n.d.).
-                                        By rewarding repeat visits with exclusive benefits, the Cultural Pass is designed to make 17th Avenue a more dynamic and regularly visited destination for locals and tourists alike.
+                                        By rewarding repeat visits with exclusive benefits, the Culture Pass is designed to make 17th Avenue a more dynamic and regularly visited destination for locals and tourists alike.
                                     </p>
                                 </section>
                                 <hr />
@@ -193,7 +193,7 @@ function Reccs() {
                                     <hr />
                                     <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
                                     <p>
-                                        The Cultural Pass directly addresses a key engagement issue on 17th Avenue, which is infrequent visits.
+                                        The Culture Pass directly addresses a key engagement issue on 17th Avenue, which is infrequent visits.
                                         With more than a third of respondents visiting only once or twice a month, there's significant room to grow
                                         repeat traffic. The Culture Pass we are suggesting provides a low-risk, high-reward strategy to
                                         capitalize on this opportunity by incentivizing visits during typically slower periods. The benefit to businesses
