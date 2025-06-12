@@ -9,6 +9,8 @@ import recc1_1 from "./images/Recc1_1.png"
 import recc1_2 from "./images/Recc1_2.png"
 import recc1_3 from "./images/Recc1_3.png"
 import recc2_1 from "./images/Recc2_1.png"
+import recc6_1 from "./images/Recc6_1.png"
+import recc6_2 from "./images/Recc6_2.png"
 
 function Reccs() {
     const [recc1, setRecc1] = useState(false);
@@ -53,7 +55,6 @@ function Reccs() {
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Parking Validation Program</b></Modal.Title>
                             </Modal.Header>
-
                             <Modal.Body>
                                 <img
                                     src="https://smartcdn.gprod.postmedia.digital/calgaryherald/wp-content/uploads/2023/02/ParkingFees314-copy.jpg?quality=90&strip=all&w=1128&h=846&type=webp&sig=rHXFFjTdvUDXch5NkFwi8A"
@@ -61,7 +62,6 @@ function Reccs() {
                                     className="img-fluid rounded mb-4"
                                 />
 
-                                {/* Overview Section */}
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
                                     <p>
@@ -71,7 +71,6 @@ function Reccs() {
                                 </section>
                                 <hr />
 
-                                {/* Evidence Section */}
                                 <section>
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
                                     <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
@@ -97,7 +96,7 @@ function Reccs() {
                                             alt="Parking rating"
                                             width={"100%"}
                                         />
-                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 3: Current Feature Rating on 17th Avenue</p>
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 3: Current Feature Rating of 17th Avenue</p>
                                     </div>
                                     <p className="text-gray-700">
                                         Survey data strongly supports this need:
@@ -331,18 +330,90 @@ function Reccs() {
 
                     <Row>
                         <Button id="button-30" onClick={() => setRecc6(true)}>Reccomendation 6: Shade & Seating</Button>
-                        <Modal
-                            size="lg"
-                            show={recc6}
-                            onHide={() => setRecc6(false)}
-                            aria-labelledby="example-modal-sizes-title-lg"
-                        >
+                        <Modal show={recc6} onHide={() => setRecc6(false)} size="lg" centered>
                             <Modal.Header closeButton>
-                                <Modal.Title id="example-modal-sizes-title-lg">
-                                    Large Modal
-                                </Modal.Title>
+                                <Modal.Title as={"h2"}><b>Shade & Seating</b></Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>...</Modal.Body>
+
+                            <Modal.Body>
+                                <img
+                                    src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
+                                    alt="Culture Pass Promotion"
+                                    className="img-fluid text-center rounded mb-4"
+                                    style={{ margin: "auto" }}
+                                />
+
+                                <section className="mb-4">
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        Walkability is one of the key factors that shapes a positive street experience. On 17th Avenue, the availability of
+                                        comfortable public seating and shaded rest areas can make a real difference - especially for seniors, families, and
+                                        pedestrians who want to take their time enjoying the street. Upgrades such as benches under trees, small green spaces,
+                                        and expanded public patios can help create a more inclusive and welcoming atmosphere.
+                                        <br />
+                                        This initiative not only makes the avenue more visually appealing but also encourages people to stay longer,
+                                        explore more businesses, and feel more connected to the area. These types of improvements help make 17th Avenue a
+                                        destination that people want to return to - not just for shopping, but for the experience itself.
+                                    </p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
+                                    <div className="mt-4">
+                                        <img
+                                            src={recc6_1}
+                                            alt="Feature Current Ratings"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 1: Feature Importance of 17th Avenue</p>
+                                    </div>
+                                    <div className="mt-4">
+                                        <img
+                                            src={recc6_2}
+                                            alt="Feature Important Ratings"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 2: Current Feature Rating of 17th Avenue</p>
+                                    </div>
+                                    <p className="text-gray-700 mt-3">
+                                        Survey data results indicate:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>‼ About <strong>87%</strong> of respondents said walkability was moderately to extremely important (fig. 1).</li>
+                                            <li>🙁 More than <strong>41%</strong> rated current walkability as moderate or worse. (fig. 2).</li>
+                                        </ul>
+                                        Secondary data indicates:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>📈 Research shows that providing street improvements for pedestrians and cyclists may increase nearby retail
+                                                sales by up to 30% (University of Wisconsin-Madison Extension, 2022).</li>
+                                        </ul>
+                                    </p>
+
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    <p>
+                                        This recommendation targets a common issue for 17th Avenue: while people value walkability,
+                                        the street doesn't always feel inviting or accessible. Adding shaded areas, small parks, and
+                                        expanded patios would help transform 17th Avenue into a place where people feel encouraged to stay longer.
+                                        These additions are especially valuable for seniors, families with young children,
+                                        and anyone needing a break while exploring the area.
+                                    </p>
+                                    <p>
+                                        Beyond improving comfort and accessibility, this initiative also supports local businesses.
+                                        When people spend more time on the street, they're more likely to visit multiple shops,
+                                        make impulse purchases, and come back again. In fact, pedestrian-friendly upgrades like these
+                                        have been shown to increase retail sales by up to 30% (University of Wisconsin-Madison Extension, 2022).
+                                        By partnering with the City of Calgary, the 17th Avenue BIA can turn this vision into reality by building
+                                        a street that better serves its visitors and strengthens its business ecosystem.
+                                    </p>
+                                </section>
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc4(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
                         </Modal>
                     </Row>
 
