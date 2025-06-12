@@ -15,6 +15,7 @@ import rec3_1 from "./images/Rec3_1.png"
 import rec3_2 from "./images/Rec3_2.png"
 import rec5_1 from "./images/Rec5_1.png"
 import rec5_2 from "./images/Rec5_2.png"
+import shade from "./images/IMG_0153.png"
 
 function Reccs() {
     const [recc1, setRecc1] = useState(false);
@@ -334,7 +335,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc4(true)}>Recomendation 4: Pop-Up Test Locations</Button>
+                        <Button id="button-30" onClick={() => setRecc4(true)}>Recommendation 4: Pop-Up Test Locations</Button>
                         <Modal show={recc4} onHide={() => setRecc4(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Pop-Up Test Locations</b></Modal.Title>
@@ -342,8 +343,8 @@ function Reccs() {
 
                             <Modal.Body>
                                 <img
-                                    src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
-                                    alt="Culture Pass Promotion"
+                                    src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Pop Up"
                                     className="img-fluid text-center rounded mb-4"
                                     style={{ margin: "auto" }}
                                 />
@@ -484,7 +485,7 @@ function Reccs() {
                                         anchors. A 2024 study found that independent booksellers perceive themselves
                                         as contributing to an average of 84% of the top 25 priorities for high street
                                         vitality and viability—such as hosting events, supporting local causes, and
-                                        fostering inclusive spaces (Sønderland Saga et al., 2024, p. 9). This
+                                        fostering inclusive spaces (Sønderland Saga et al., 2024, p.9). This
                                         underscores their role as catalysts for community engagement and economic
                                         resilience.
                                     </p>
@@ -511,7 +512,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc6(true)}>Recomendation 6: Shade & Seating</Button>
+                        <Button id="button-30" onClick={() => setRecc6(true)}>Recommendation 6: Shade & Seating</Button>
                         <Modal show={recc6} onHide={() => setRecc6(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Shade & Seating</b></Modal.Title>
@@ -519,10 +520,10 @@ function Reccs() {
 
                             <Modal.Body>
                                 <img
-                                    src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
-                                    alt="Culture Pass Promotion"
+                                    src={shade}
+                                    alt="Shaded Area"
                                     className="img-fluid text-center rounded mb-4"
-                                    style={{ margin: "auto" }}
+                                    style={{ textAlign: "center", margin: "auto", maxHeight: "10%" }}
                                 />
 
                                 <section className="mb-4">
@@ -567,7 +568,7 @@ function Reccs() {
                                         Secondary data indicates:
                                         <ul className="list-disc pl-6 mt-2">
                                             <li>📈 Research shows that providing street improvements for pedestrians and cyclists may increase nearby retail
-                                                sales by up to 30% (University of Wisconsin-Madison Extension, 2022).</li>
+                                                sales by up to 30% (University of Wisconsin-Madison Extension, 2019).</li>
                                         </ul>
                                     </p>
 
@@ -584,7 +585,7 @@ function Reccs() {
                                         Beyond improving comfort and accessibility, this initiative also supports local businesses.
                                         When people spend more time on the street, they're more likely to visit multiple shops,
                                         make impulse purchases, and come back again. In fact, pedestrian-friendly upgrades like these
-                                        have been shown to increase retail sales by up to 30% (University of Wisconsin-Madison Extension, 2022).
+                                        have been shown to increase retail sales by up to 30% (University of Wisconsin-Madison Extension, 2019).
                                         By partnering with the City of Calgary, the 17th Avenue BIA can turn this vision into reality by building
                                         a street that better serves its visitors and strengthens its business ecosystem.
                                     </p>
@@ -592,7 +593,7 @@ function Reccs() {
                             </Modal.Body>
 
                             <Modal.Footer>
-                                <Button variant="secondary" onClick={() => setRecc4(false)}>
+                                <Button variant="secondary" onClick={() => setRecc6(false)}>
                                     Close
                                 </Button>
                             </Modal.Footer>

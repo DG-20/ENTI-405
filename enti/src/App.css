@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  background-color: #f3ede0;
 }
 
 .landing {
-  background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1");
+  background-image: none;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;

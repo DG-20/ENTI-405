@@ -29,7 +29,8 @@
 }
 
 .mainText {
-    background-color: rgba(139, 0, 0, .8); /* dark red */
+    background-color: rgba(139, 0, 0, .8);
+    /* dark red */
     font-weight: bold;
     padding: 100px;
     border-radius: 10px;
@@ -37,7 +38,7 @@
 
 
 .subTitle {
-    font-size:45px;
+    font-size: 45px;
     font-family: 'Merriweather', serif;
     font-weight: 400;
     opacity: 0;
