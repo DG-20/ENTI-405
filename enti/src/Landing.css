@@ -19,7 +19,7 @@
     background-image: url("https://wherecalgary.ca/wp-content/uploads/2023/06/MG_6515-scaled.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(2px);
+    filter: blur(3px);
     z-index: 0;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .mainText {
-    background-color: rgba(139, 0, 0, .8);
+    background-color: rgba(139, 0, 0, .7);
     font-weight: bold;
     padding: 60px;
     border-radius: 10px;
@@ -38,7 +38,7 @@
 
 .subTitle {
     font-size: 45px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Garamound', sans-serif;
     font-weight: 400;
     opacity: 0;
     animation-name: FadeIn;

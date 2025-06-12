@@ -56,7 +56,7 @@ function Reccs() {
                     className="align-items-center text-center buttons"
                 >
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc1(true)}>Recommendation 1: Parking</Button>
+                        <Button id="button-30" onClick={() => setRecc1(true)}>Parking Validation Program</Button>
                         <Modal show={recc1} onHide={() => setRecc1(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Parking Validation Program</b></Modal.Title>
@@ -70,6 +70,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Other Stakeholders
+                                    </p>
                                     <p>
                                         To reduce a key barrier to visiting 17th Avenue, we recommend implementing a parking validation program that offers customers free or discounted parking when they make purchases at participating businesses on the street. This would likely be managed through digital codes or a mobile application and could be paired with long-term plans for improved parking infrastructure, such as an underground parkade.
                                         This initiative not only reduces visitor cost but encourages longer, more frequent visits while boosting collaboration between local shops. This benefits both business and consumers alike. By reducing a barrier to entry, businesses will likely see a higher number of customer vists on average. In addition, by offering parking discount or free parking, consumers will have a better experience when visiting 17th Ave - a key issue currently faced by many visitors as described below.
@@ -147,7 +150,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc2(true)}>Recommendation 2: Culture Pass</Button>
+                        <Button id="button-30" onClick={() => setRecc2(true)}>Culture Pass</Button>
                         <Modal show={recc2} onHide={() => setRecc2(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>17th Avenue Culture Pass</b></Modal.Title>
@@ -163,6 +166,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Other Stakeholders
+                                    </p>
                                     <p>
                                         The 17th Avenue Culture Pass is a digital pass that offers discounts and perks at local restaurants, cafés, boutiques, and more. Its purpose is to increase visits and help create a more vibrant, connected atmosphere along 17th Avenue.
                                         This pass will be valid during off-peak hours - such as between 3 PM and 6 PM on weekdays (happy hour already offered by many businesses) or on select holidays (17th Avenue Retail & Entertainment District, n.d.).
@@ -225,7 +231,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc3(true)}>Recommendation 3: Night Market</Button>
+                        <Button id="button-30" onClick={() => setRecc3(true)}>Night Market</Button>
                         <Modal
                             size="lg"
                             show={recc3}
@@ -255,6 +261,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Other Stakeholders & Potential Entrepreneurs
+                                    </p>
                                     <p>
                                         To address low engagement during evening hours and support business innovation, we recommend organizing
                                         collaborative night markets along 17th Avenue. These markets would bring together local businesses
@@ -336,7 +345,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc4(true)}>Recommendation 4: Pop-Up Test Locations</Button>
+                        <Button id="button-30" onClick={() => setRecc4(true)}>Pop-Up Test Locations</Button>
                         <Modal show={recc4} onHide={() => setRecc4(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Pop-Up Test Locations</b></Modal.Title>
@@ -352,6 +361,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Potential Entrepreneurs
+                                    </p>
                                     <p>
                                         One of the biggest challenges facing 17th Avenue is the constant turnover of small businesses.
                                         Many shops close before they've had a real chance to get off the ground, leaving behind empty storefronts and a sense of
@@ -410,7 +422,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc5(true)}>Recommendation 5: Family-Friendly Activities</Button>
+                        <Button id="button-30" onClick={() => setRecc5(true)}>Family-Friendly Activities</Button>
                         <Modal
                             size="lg"
                             show={recc5}
@@ -432,6 +444,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Potential Entrepreneurs
+                                    </p>
                                     <p>
                                         To enhance daytime engagement and attract diverse visitors, we recommend introducing
                                         a family-friendly, activity-based business on 17th Avenue—such as a pottery studio,
@@ -513,7 +528,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc6(true)}>Recommendation 6: Shade & Seating</Button>
+                        <Button id="button-30" onClick={() => setRecc6(true)}>Shade & Seating</Button>
                         <Modal show={recc6} onHide={() => setRecc6(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Shade & Seating</b></Modal.Title>
@@ -529,6 +544,9 @@ function Reccs() {
 
                                 <section className="mb-4">
                                     <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        <b>Targeted Group:</b> Other Stakeholders
+                                    </p>
                                     <p>
                                         Walkability is one of the key factors that shapes a positive street experience. On 17th Avenue, the availability of
                                         comfortable public seating and shaded rest areas can make a real difference - especially for seniors, families, and
@@ -602,7 +620,7 @@ function Reccs() {
                     </Row>
                     <br/>
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc7(true)}>References</Button>
+                        <Button id="button-20" onClick={() => setRecc7(true)}>References</Button>
                         <Modal show={recc7} onHide={() => setRecc7(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>References</b></Modal.Title>
