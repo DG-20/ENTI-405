@@ -24,6 +24,7 @@ function Reccs() {
     const [recc4, setRecc4] = useState(false);
     const [recc5, setRecc5] = useState(false);
     const [recc6, setRecc6] = useState(false);
+    const [recc7, setRecc7] = useState(false);
 
     const { ref: reccRef, inView: reccVisible } = useInView({
         threshold: 0.25,
@@ -470,10 +471,10 @@ function Reccs() {
                                     <p className="text-gray-700 mt-3">
                                         Survey responses highlight the need for this program:
                                         <ul className="list-disc pl-6 mt-2">
-                                            <li>📉 <strong>60.82%</strong> of respondents rated family-friendly environments and specialty
-                                                shops as moderately to extremely important  (fig. 1).</li>
-                                            <li>📈 <strong>65.08%</strong> of respondents rated the current offerings
+                                            <li>📉 <strong>65.08%</strong> of respondents rated the current offerings
                                                 in this area as moderate, weak, or poor (fig. 2).</li>
+                                            <li>📈 <strong>60.82%</strong> of respondents rated family-friendly environments and specialty
+                                                shops as moderately to extremely important  (fig. 1).</li>
                                         </ul>
                                     </p>
                                     <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
@@ -594,6 +595,125 @@ function Reccs() {
 
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={() => setRecc6(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
+                    </Row>
+                    <br/>
+                    <Row>
+                        <Button id="button-30" onClick={() => setRecc7(true)}>References</Button>
+                        <Modal show={recc7} onHide={() => setRecc7(false)} size="lg" centered>
+                            <Modal.Header closeButton>
+                                <Modal.Title as={"h2"}><b>References</b></Modal.Title>
+                            </Modal.Header>
+
+                            <Modal.Body>
+                                <section className="mb-4">
+                                    <h2>References</h2>
+                                    <p>
+                                        Avenuecalgary. (2025, May 11). <em>Summer Night Markets in Calgary</em>. Avenue Calgary.<br />
+                                        <a href="https://www.avenuecalgary.com/things-to-do/summer-night-markets-in-calgary/" target="_blank" rel="noopener noreferrer">
+                                        https://www.avenuecalgary.com/things-to-do/summer-night-markets-in-calgary/
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Cryderman, K. (2019, January 24). <em>Short-term retail sees unprecedented growth in Canada</em>. Retail Insider.<br />
+                                        <a href="https://retail-insider.com/retail-insider/2016/07/short-term-retail/" target="_blank" rel="noopener noreferrer">
+                                        https://retail-insider.com/retail-insider/2016/07/short-term-retail/
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Discover Calgary's 17th Ave SW. (2023, April 14). <em>Happy hour on 17th Ave!</em><br />
+                                        <a href="https://17thave.ca/17th-ave-sw/happy-hour-on-17th-ave/" target="_blank" rel="noopener noreferrer">
+                                        https://17thave.ca/17th-ave-sw/happy-hour-on-17th-ave/
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Institute, C. U. (2020, November 30). <em>Memo #17: Using pop-ups to activate Main Street</em>. Bring Back Main Street.<br />
+                                        <a href="https://bringbackmainstreet.org/memos-from-main-street/memo-17-using-pop-ups-to-activate-main-street" target="_blank" rel="noopener noreferrer">
+                                        https://bringbackmainstreet.org/memos-from-main-street/memo-17-using-pop-ups-to-activate-main-street
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Parks of Calgary: Interactive map. viewer.mapme.com. (n.d.).<br />
+                                        <a href="https://viewer.mapme.com/895d0bdc-75a7-4753-a5e2-8c0fc535b787/location/f80b9694-f68b-4d98-8396-673baebd7432" target="_blank" rel="noopener noreferrer">
+                                        https://viewer.mapme.com/895d0bdc-75a7-4753-a5e2-8c0fc535b787/location/f80b9694-f68b-4d98-8396-673baebd7432
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Popup Together. (n.d.). <em>How pop-up shop marketplaces are changing the game</em>. Retrieved June 11, 2025.<br />
+                                        <a href="https://popuptogether.ca/how-pop-up-shop-marketplaces-are-changing-the-game/" target="_blank" rel="noopener noreferrer">
+                                        https://popuptogether.ca/how-pop-up-shop-marketplaces-are-changing-the-game/
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Postmedia News. (2023, February). <em>Calgary street parking payment machine</em> [Photograph]. Calgary Herald.<br />
+                                        <a href="https://smartcdn.gprod.postmedia.digital/calgaryherald/wp-content/uploads/2023/02/ParkingFees314-copy.jpg" target="_blank" rel="noopener noreferrer">
+                                        https://smartcdn.gprod.postmedia.digital/calgaryherald/wp-content/uploads/2023/02/ParkingFees314-copy.jpg
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Postmedia News. (2024, May). <em>17th Avenue pedestrian walkway</em> [Photograph]. Calgary Herald.<br />
+                                        <a href="https://smartcdn.gprod.postmedia.digital/calgaryherald/wp-content/uploads/2024/05/17thAveWalkway004-copy.jpg" target="_blank" rel="noopener noreferrer">
+                                        https://smartcdn.gprod.postmedia.digital/calgaryherald/wp-content/uploads/2024/05/17thAveWalkway004-copy.jpg
+                                        </a>
+                                    </p>
+                                    <p>
+                                        RetailNext. (2018, August 21). <em>Mobile app features that will boost your retail business</em>. RetailNext.<br />
+                                        <a href="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75" target="_blank" rel="noopener noreferrer">
+                                        https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Savour Calgary. (2024, May). <em>Untitled design828</em>. Savour Calgary.<br />
+                                        <a href="https://savourcalgary.ca/wp-content/uploads/2024/05/Untitled-design828.png" target="_blank" rel="noopener noreferrer">
+                                        https://savourcalgary.ca/wp-content/uploads/2024/05/Untitled-design828.png
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Sønderland Saga, R., Ntounis, N., Warnaby, G., Gregory, C., & Parker, C. (2024). <em>Booksellers as placemakers: Innovative roles of independent booksellers in high street retailing</em>. Local Economy, 39(1–2), 42–60.<br />
+                                        <a href="https://doi.org/10.1177/02690942241291000" target="_blank" rel="noopener noreferrer">
+                                        https://doi.org/10.1177/02690942241291000
+                                        </a>
+                                    </p>
+                                    <p>
+                                        TripAdvisor. (n.d.). <em>Vibrant colors and endless patios</em> [Photograph]. TripAdvisor.<br />
+                                        <a href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1" target="_blank" rel="noopener noreferrer">
+                                        https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Unsplash. (n.d.). <em>[Photograph of Open sign on store]</em>. Unsplash.<br />
+                                        <a href="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                        https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Westaby, K. A. (2019, July). <em>Walkability means better business</em> (Issue 188). University of Wisconsin-Madison Division of Extension.<br />
+                                        <a href="https://economicdevelopment.extension.wisc.edu/articles/walkability-means-better-business-issue-188-july-2019/" target="_blank" rel="noopener noreferrer">
+                                        https://economicdevelopment.extension.wisc.edu/articles/walkability-means-better-business-issue-188-july-2019/
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Where Calgary. (2023). <em>17th Avenue summer scene</em> [Photograph].<br />
+                                        <a href="https://wherecalgary.ca/wp-content/uploads/2023/06/MG_6515-scaled.jpg" target="_blank" rel="noopener noreferrer">
+                                        https://wherecalgary.ca/wp-content/uploads/2023/06/MG_6515-scaled.jpg
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Yelp. (n.d.). <em>[Image of tacos on a tray]</em>. Yelp.<br />
+                                        <a href="https://s3-media0.fl.yelpcdn.com/bphoto/i83k0Q-sxw0EilxkTbKqvg/o.jpg" target="_blank" rel="noopener noreferrer">
+                                        https://s3-media0.fl.yelpcdn.com/bphoto/i83k0Q-sxw0EilxkTbKqvg/o.jpg
+                                        </a>
+                                    </p>
+                                </section>
+
+                                
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc7(false)}>
                                     Close
                                 </Button>
                             </Modal.Footer>
