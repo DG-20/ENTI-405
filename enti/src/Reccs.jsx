@@ -11,6 +11,10 @@ import recc1_3 from "./images/Recc1_3.png"
 import recc2_1 from "./images/Recc2_1.png"
 import recc6_1 from "./images/Recc6_1.png"
 import recc6_2 from "./images/Recc6_2.png"
+import rec3_1 from "./images/Rec3_1.png"
+import rec3_2 from "./images/Rec3_2.png"
+import rec5_1 from "./images/Rec5_1.png"
+import rec5_2 from "./images/Rec5_2.png"
 
 function Reccs() {
     const [recc1, setRecc1] = useState(false);
@@ -36,7 +40,7 @@ function Reccs() {
                 className={`${"reccOrig"} ${reccVisible ? "reccAnim" : "reccOrig"
                     }`}
             >
-                <h1 className="reccTitle">Reccomendations</h1>
+                <h1 className="reccTitle">Recommendations</h1>
                 <hr className="titleHr" />
                 <br />
 
@@ -50,7 +54,7 @@ function Reccs() {
                     className="align-items-center text-center buttons"
                 >
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc1(true)}>Reccomendation 1: Parking</Button>
+                        <Button id="button-30" onClick={() => setRecc1(true)}>Recommendation 1: Parking</Button>
                         <Modal show={recc1} onHide={() => setRecc1(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>Parking Validation Program</b></Modal.Title>
@@ -109,7 +113,7 @@ function Reccs() {
                                     </p>
                                     <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Data</h4>
                                     <p className="text-gray-700">
-                                        Observation supporting the reccomendation:
+                                        Observation supporting the recomendation:
                                         <ul className="list-disc pl-6 mt-2">
                                             <li>When we visited 17th Avenue, we noticed that there was little to no street parking available,
                                                 and a lot of cars were lined up at lights and stop signs.</li>
@@ -141,7 +145,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc2(true)}>Reccomendation 2: Culture Pass</Button>
+                        <Button id="button-30" onClick={() => setRecc2(true)}>Recommendation 2: Culture Pass</Button>
                         <Modal show={recc2} onHide={() => setRecc2(false)} size="lg" centered>
                             <Modal.Header closeButton>
                                 <Modal.Title as={"h2"}><b>17th Avenue Culture Pass</b></Modal.Title>
@@ -219,7 +223,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc3(true)}>Reccomendation 3: Night Market</Button>
+                        <Button id="button-30" onClick={() => setRecc3(true)}>Recommendation 3: Night Market</Button>
                         <Modal
                             size="lg"
                             show={recc3}
@@ -228,10 +232,103 @@ function Reccs() {
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="example-modal-sizes-title-lg">
-                                    Large Modal
+                                    17th Avenue Night Market
                                 </Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>...</Modal.Body>
+                            <Modal.Body>
+                                {/* 
+                                1. img
+                                2. description and benefits
+                                3. evidence
+                                 -quantative (graphs)
+                                 -qualitative
+                                4. analysis
+                                 */}
+                                <img
+                                    src="https://savourcalgary.ca/wp-content/uploads/2024/05/Untitled-design828.png"
+                                    alt="Night Market Img"
+                                    className="img-fluid text-center rounded mb-4"
+                                    style={{ margin: "auto" }}
+                                />
+
+                                <section className="mb-4">
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        To address low engagement during evening hours and support business innovation, we recommend organizing
+                                        collaborative night markets along 17th Avenue. These markets would bring together local businesses
+                                        for special evening events that feature extended hours, live entertainment, and opportunities to
+                                        test new ideas in a low-risk setting. By creating a vibrant and social atmosphere, night markets
+                                        can attract more foot traffic and build stronger community connections.
+                                    </p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
+                                    <p className="text-gray-700">
+                                        There is clear demand for this kind of initiative. According to our survey
+                                        of 17th Avenue visitors and residents, 73.96% of respondents consider early
+                                        or late shopping hours to be moderately, very, or extremely important.
+                                        However, 68% rate the current availability of these hours on 17th Avenue
+                                        as moderate, weak, or poor. This gap presents a key opportunity to reimagine
+                                        how the district engages customers in the evening and unlocks new business potential.
+                                    </p>
+                                    <div className="mt-4">
+                                        <img
+                                            src={rec3_1}
+                                            alt="Ratings of the current features on 17th Ave chart"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 1: Ratings of the current features on 17th Ave</p>
+                                    </div>
+                                    <div className="mt-4">
+                                        <img
+                                            src={rec3_2}
+                                            alt="Ratings of the importance of features on 17th Ave chart"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 2: Ratings of the importance of features on 17th Ave</p>
+                                    </div>
+                                    <p className="text-gray-700 mt-3">
+                                        Survey responses highlight the need for this program:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>📉 <strong>68.09%</strong> of respondents rate the current
+                                                availability of these hours on 17th Avenue as moderate, weak,
+                                                or poor  (fig. 1).</li>
+                                            <li>📈 <strong>73.96%</strong> of respondents consider early
+                                                or late shopping hours to be moderately, very, or extremely
+                                                important (fig. 2).</li>
+                                        </ul>
+                                    </p>
+
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
+                                    <p className="text-gray-700">
+                                        Other districts in Calgary, such as Inglewood, Kensington, and 4th Street, have already
+                                        proven the effectiveness of night markets. These areas host summer events once per month,
+                                        often drawing large crowds and increasing local business visibility. In fact, 4th Street
+                                        is now hosting its fifth annual night market in 2025, signaling strong ongoing
+                                        success (Avenue Calgary, 2025).
+                                    </p>
+
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    <p>
+                                        To implement this on 17th Avenue, we would begin by engaging local
+                                        businesses and gauging interest through outreach and information sessions.
+                                        Once sufficient support is confirmed, the initiative would be brought to
+                                        the 17th Avenue Business Improvement Area (BIA) for planning and
+                                        coordination. A pilot event could launch during the summer, with the goal
+                                        of creating a sustainable model that benefits both businesses and the broader
+                                        community.
+                                    </p>
+                                </section>
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc3(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
                         </Modal>
                     </Row>
                     <br />
@@ -311,7 +408,7 @@ function Reccs() {
                     <br />
 
                     <Row>
-                        <Button id="button-30" onClick={() => setRecc5(true)}>Reccomendation 5: Book Store</Button>
+                        <Button id="button-30" onClick={() => setRecc5(true)}>Recommendation 5: Family-Friendly Activities</Button>
                         <Modal
                             size="lg"
                             show={recc5}
@@ -320,10 +417,95 @@ function Reccs() {
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="example-modal-sizes-title-lg">
-                                    Large Modal
+                                    Implementing Family-Friendly Activities
                                 </Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>...</Modal.Body>
+                            <Modal.Body>
+                                <img
+                                    src="https://s3-media0.fl.yelpcdn.com/bphoto/i83k0Q-sxw0EilxkTbKqvg/o.jpg"
+                                    alt="Bookstore Img"
+                                    className="img-fluid text-center rounded mb-4"
+                                    style={{ margin: "auto" }}
+                                />
+
+                                <section className="mb-4">
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        To enhance daytime engagement and attract diverse visitors, we recommend introducing
+                                        a family-friendly, activity-based business on 17th Avenue—such as a pottery studio,
+                                        cat café, or independent bookstore. These types of ventures offer more than just
+                                        products—they provide engaging, low-barrier experiences that encourage people to
+                                        stay longer, return more often, and explore the area in new ways.
+                                    </p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
+                                    <p className="text-gray-700">
+                                        This idea directly responds to local demand. According to our 2025 community
+                                        survey, 60.82% of respondents rated family-friendly environments and specialty
+                                        shops as moderately to extremely important, yet 65.08% rated the current offerings
+                                        in this area as moderate, weak, or poor. This highlights a clear opportunity
+                                        to diversify the types of businesses on the avenue and better serve individuals,
+                                        families, and potential entrepreneurs.
+                                    </p>
+                                    <div className="mt-4">
+                                        <img
+                                            src={rec5_1}
+                                            alt="Ratings of the importance of features on 17th Ave chart"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 1: Ratings of the importance of features on 17th Ave</p>
+                                    </div>
+                                    <div className="mt-4">
+                                        <img
+                                            src={rec5_2}
+                                            alt="Ratings of the current features on 17th Ave chart"
+                                            width={"100%"}
+                                        />
+                                        <p className="text-sm text-gray-500 mt-2 text-center">Fig. 2: Ratings of the current features on 17th Ave</p>
+                                    </div>
+                                    <p className="text-gray-700 mt-3">
+                                        Survey responses highlight the need for this program:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>📉 <strong>60.82%</strong> of respondents rated family-friendly environments and specialty
+                                                shops as moderately to extremely important  (fig. 1).</li>
+                                            <li>📈 <strong>65.08%</strong> of respondents rated the current offerings
+                                                in this area as moderate, weak, or poor (fig. 2).</li>
+                                        </ul>
+                                    </p>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
+                                    <p className="text-gray-700">
+                                        In addition to meeting local needs, this type of venture contributes to the
+                                        overall health of the avenue. Activity-based businesses help balance nightlife
+                                        and retail, add vibrancy during daytime hours, and support a welcoming street
+                                        environment. Bookstores in particular have proven to be powerful placemaking
+                                        anchors. A 2024 study found that independent booksellers perceive themselves
+                                        as contributing to an average of 84% of the top 25 priorities for high street
+                                        vitality and viability—such as hosting events, supporting local causes, and
+                                        fostering inclusive spaces (Sønderland Saga et al., 2024, p. 9). This
+                                        underscores their role as catalysts for community engagement and economic
+                                        resilience.
+                                    </p>
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    <p>
+                                        To implement this recommendation, we propose identifying vacant or
+                                        underutilized spaces along 17th Avenue and promoting them as opportunities
+                                        for creative entrepreneurs. The 17th Avenue Business Improvement Area (BIA)
+                                        could support this with flexible leases, startup incentives, or pilot partnerships.
+                                        Public pop-ups, such as pottery workshops or mini cat café days, could test
+                                        interest and build momentum.
+                                    </p>
+                                </section>
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc5(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
                         </Modal>
                     </Row>
                     <br />

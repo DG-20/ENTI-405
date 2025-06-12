@@ -1,5 +1,5 @@
 .landingParent {
-    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1");
+    background-image: url("https://wherecalgary.ca/wp-content/uploads/2023/06/MG_6515-scaled.jpg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -16,10 +16,10 @@
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9d/83/8b/vibrant-colors-and-endless.jpg?w=1200&h=-1&s=1");
+    background-image: url("https://wherecalgary.ca/wp-content/uploads/2023/06/MG_6515-scaled.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(1px);
+    filter: blur(2px);
     z-index: 0;
 }
 
@@ -29,16 +29,16 @@
 }
 
 .mainText {
-    background-color: rgba(0, 0, 0, 0.341);
+    background-color: rgba(139, 0, 0, .8); /* dark red */
     font-weight: bold;
-    padding: 5px;
+    padding: 100px;
     border-radius: 10px;
 }
 
 
 .subTitle {
-    font-size: 30px;
-    font-family: "Quicksand", sans-serif;
+    font-size:45px;
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     opacity: 0;
     animation-name: FadeIn;
