@@ -593,7 +593,7 @@ function Reccs() {
                             </Modal.Body>
 
                             <Modal.Footer>
-                                <Button variant="secondary" onClick={() => setRecc4(false)}>
+                                <Button variant="secondary" onClick={() => setRecc6(false)}>
                                     Close
                                 </Button>
                             </Modal.Footer>
