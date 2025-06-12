@@ -15,7 +15,7 @@ function Landing() {
                         <p className="text-center mainText">
                             Let's Improve 17th Avenue?
                             <br />
-                            <p style={{ fontSize: "large" }}>Yes, Please!</p>
+                            <p style={{ fontSize: "22px" }}>Yes, Please!</p>
                         </p>
                         <a href="#main">
                             <div className="scrollAnim">
