@@ -187,7 +187,7 @@ function Reccs() {
                                     <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
                                     <p className="text-gray-700">
                                         Within our interview with Judy House, owner of Pimlico Bar, she mentioned something that really stood out to us. When asking about
-                                        the personality of the street, she said "when it's busy, the atmosphere is electric, but when it's quiet, it's very sad".
+                                        the personality of the street, she said <em>"when it's busy, the atmosphere is electric, but when it's quiet, it's very sad".</em>
                                     </p>
 
                                     <hr />
@@ -239,18 +239,74 @@ function Reccs() {
 
                     <Row>
                         <Button id="button-30" onClick={() => setRecc4(true)}>Reccomendation 4: Pop-Up Test Locations</Button>
-                        <Modal
-                            size="lg"
-                            show={recc4}
-                            onHide={() => setRecc4(false)}
-                            aria-labelledby="example-modal-sizes-title-lg"
-                        >
+                        <Modal show={recc4} onHide={() => setRecc4(false)} size="lg" centered>
                             <Modal.Header closeButton>
-                                <Modal.Title id="example-modal-sizes-title-lg">
-                                    Large Modal
-                                </Modal.Title>
+                                <Modal.Title as={"h2"}><b>Pop-Up Test Locations</b></Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>...</Modal.Body>
+
+                            <Modal.Body>
+                                <img
+                                    src="https://retailnext.net/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fuskqevaodrls%2F1vbAkEoGpWRjxk9T1EwzCK%2F109c0ba382ebf6c3d5f6f0b1789df118%2Fcover-mobile-app-features-that.png&w=3840&q=75"
+                                    alt="Culture Pass Promotion"
+                                    className="img-fluid text-center rounded mb-4"
+                                    style={{ margin: "auto" }}
+                                />
+
+                                <section className="mb-4">
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Description and Benefits</h3>
+                                    <p>
+                                        One of the biggest challenges facing 17th Avenue is the constant turnover of small businesses.
+                                        Many shops close before they've had a real chance to get off the ground, leaving behind empty storefronts and a sense of
+                                        uncertainty for residents. To address this, we recommend introducing a rotating pop-up program -
+                                        a flexible space where entrepreneurs can test their business ideas without the pressure of a long-term lease.
+                                        <br />
+                                        These pop-up spots would give new businesses a low-risk, high-reward opportunity to build a customer base,
+                                        gather feedback, and fine-tune their offerings. For shoppers and residents, it means more variety and fresh
+                                        experiences on the street - from handmade goods to unique cafés - all without the disruption of constant
+                                        closures. By encouraging experimentation and reducing barriers to entry, the program would strengthen the
+                                        local business ecosystem and bring more life to 17th Avenue.
+                                    </p>
+                                </section>
+                                <hr />
+                                <section>
+                                    <h3 className="text-lg font-semibold mb-2 text-gray-800">Evidence</h3>
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Quantitative Data</h4>
+                                    <p className="text-gray-700 mt-3">
+                                        Secondary data clearly indicates how successful this could be:
+                                        <ul className="list-disc pl-6 mt-2">
+                                            <li>📈 <strong>80%</strong> of Canadian retailers who launched a pop-up reported it was a success (Cryderman, 2019).</li>
+                                            <li>💵 Globally, the pop-up market is projected to hit <strong>$80-95 billion</strong> by the mid-2020s (Popup Together, n.d.).</li>
+                                        </ul>
+                                    </p>
+
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Qualitative Insight</h4>
+                                    <p className="text-gray-700">
+                                        In our street interviews, one long-time resident shared: <em>“I don't like how fast businesses shut down.
+                                            I used to go to the market but it had to close. My favourite coffee store did as well”</em>.
+                                    </p>
+
+                                    <hr />
+                                    <h4 className="text-lg font-semibold mb-2 text-gray-800">Analysis</h4>
+                                    <p>
+                                        This feedback speaks to something many people feel: when local businesses disappear, the street loses some of its character.
+                                        With many stores closing too soon, there's a need for a more supportive way to help entrepreneurs succeed.
+                                        That's where the rotating pop-up program comes in.
+                                    </p>
+                                    <p>
+                                        By offering short-term, affordable spacec, it lowers the barrier for new businesses and gives them a chance to grow
+                                        without taking huge risks. For the community, it means more activity during the week, fewer empty storefronts, and a
+                                        better mix of shops and services. Partnering with the City of Calgary and property owners to activate underused spaces
+                                        could unlock big potential. With regular vendor rotations and simple feedback tools, the program would help identify
+                                        which businesses have staying power - all while making 17th Avenue a more vibrant and resilient place to shop and visit.
+                                    </p>
+                                </section>
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={() => setRecc4(false)}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
                         </Modal>
                     </Row>
                     <br />
