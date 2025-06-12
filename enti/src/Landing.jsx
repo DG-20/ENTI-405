@@ -13,7 +13,9 @@ function Landing() {
                 <Row>
                     <div className={`${""} ${landingVisible ? "subTitle" : "17th Ave Recommendations by Group 7"}`}>
                         <p className="text-center mainText">
-                            17th Ave Recommendations by Group 7
+                            Let's Improve 17th Avenue?
+                            <br />
+                            <p style={{ fontSize: "large" }}>Yes, Please!</p>
                         </p>
                         <a href="#main">
                             <div className="scrollAnim">
