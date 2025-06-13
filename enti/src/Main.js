@@ -26,7 +26,7 @@ function Main() {
                                 }`}
                         >
                             <p className="text-start"><b>Welcome from Group 7!</b></p>
-                            <p className="text-start"><b>We are: Eshal Ahmed, <a href="https://divgoyal.netlify.app" rel="noreferrer" target="_blank">Divyansh Goyal</a>, <a href="https://www.linkedin.com/in/abia-jahangir-651bb9161/" rel="noreferrer" target="_blank">Abia Jahangir</a></b></p>
+                            <p className="text-start"><b>We are:<a href="https://www.linkedin.com/in/eshal-ahmed-75a7b8327/" rel="noreferrer" target="_blank">Eshal Ahmed</a>, <a href="https://divgoyal.netlify.app" rel="noreferrer" target="_blank">Divyansh Goyal</a>, <a href="https://www.linkedin.com/in/abia-jahangir-651bb9161/" rel="noreferrer" target="_blank">Abia Jahangir</a></b></p>
                             <p className="text-start">
                                 This website presents six targeted, evidence-based recommendations for improving 17th Avenue in Calgary. Developed through extensive primary and secondary research, each recommendation is supported by key data, community insights, and practical analysis.
                                 To explore our proposals, simply scroll down and click on any of the featured tiles to view a detailed breakdown, including benefits, supporting evidence, and implementation considerations.
